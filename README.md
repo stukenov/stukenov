@@ -10,9 +10,9 @@ Based in Kazakhstan. Building [Adapto](https://adapto.kz) — an AI layer for bu
 
 | Project | What it does | Stack |
 |---|---|---|
-| [**rav2d**](https://github.com/stukenov/rav2d) | AV2 video decoder — a full port of the dav2d C logic to memory-safe Rust. 47K lines, 786 tests. | Rust, FFI |
+| [**rav2d**](https://github.com/stukenov/rav2d) | Memory-safe AV2 video decoder ported from dav2d — bit-exact with dav2d on the full conformance corpus. | Rust, NEON |
+| [**rav2e**](https://github.com/stukenov/rav2e) | AV2 video encoder written from scratch — every stream checked against rav2d and the AOM reference decoder. | Rust |
 | [**keste**](https://github.com/stukenov/keste) | Minimalist spreadsheet built on SQLite — every file is a database, formulas are tables. LLM-friendly. | TypeScript, SQLite |
-| [**pigeon**](https://github.com/stukenov/pigeon) | Self-hosted, Telegram-compatible messaging server in 5K lines of Rust. Works with unmodified clients. | Rust |
 | [**omniff**](https://github.com/stukenov/omniff) | "FFmpeg for AI" — a universal multimodal runtime for inference, generation, and transformation. | Python |
 | [**qazlang**](https://github.com/stukenov/qazlang) | 🇰🇿 The first programming language with native Kazakh syntax — breaking the English-only barrier. | Python |
 | [**postpilot**](https://github.com/stukenov/postpilot) | Open-source social autoposter — schedule & publish to Threads, LinkedIn, Facebook & Telegram from your terminal. | Python, Playwright |
@@ -21,7 +21,7 @@ Based in Kazakhstan. Building [Adapto](https://adapto.kz) — an AI layer for bu
 
 ### What I work on
 
-**🦀 Systems & Rust** — [rav2d](https://github.com/stukenov/rav2d) (AV2 decoder), [pigeon](https://github.com/stukenov/pigeon) (Telegram-compatible server), [adapto-core](https://github.com/stukenov/adapto-core) (a Rust web framework with an embedded document DB) and its [VS Code extension](https://github.com/stukenov/adapto-vscode).
+**🦀 Systems & Rust** — [rav2d](https://github.com/stukenov/rav2d) (AV2 decoder), [rav2e](https://github.com/stukenov/rav2e) (AV2 encoder), [adapto-core](https://github.com/stukenov/adapto-core) (a Rust web framework with an embedded document DB) and its [VS Code extension](https://github.com/stukenov/adapto-vscode).
 
 **🇰🇿 Kazakh-language AI** — an open stack for an underserved language: [slm](https://github.com/stukenov/slm) (small LMs, 14M–600M params, from scratch), [turkic-tts](https://github.com/stukenov/turkic-tts) (text-to-speech), [kazakh-speech-pipeline](https://github.com/stukenov/kazakh-speech-pipeline) (Whisper + GPT-4 ASR), [qazlang](https://github.com/stukenov/qazlang), and the [kazakh-nlp-toolkit](https://github.com/stukenov/kazakh-nlp-toolkit) umbrella.
 
